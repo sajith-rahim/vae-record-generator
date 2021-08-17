@@ -2,7 +2,6 @@ from collections import namedtuple
 
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder
 from sklearn.mixture import BayesianGaussianMixture
 
 from rdt.transformers import OneHotEncodingTransformer
@@ -57,7 +56,8 @@ class Transformer:
 
     def transform_discrete(self, attr_transform_details, raw_column_data):
         ohe = attr_transform_details.transformer
-        return [ohe.transform(raw_column_data)]
+        d = [ohe.transform(raw_column_data)]
+        return d
 
     def fit_continuous(self, column_name, data):
         """ bayesian GMM for continuous column"""
@@ -142,7 +142,7 @@ class Transformer:
             else:
                 _transform_info = self.fit_continuous(
                     column_name, raw_column_data)
-
+            # _transform_info : dict
             self.output_info_list.append(_transform_info.output_info)
             self.output_dimensions += _transform_info.output_dimensions
             self._attr_transform_info.append(_transform_info)
