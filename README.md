@@ -1,5 +1,5 @@
 # vae-record-generation
-VAE FOR RELATIONAL RECORD GENERATION
+*VAE for Relational Data Generation*
 
 ### Project Structure:
 
