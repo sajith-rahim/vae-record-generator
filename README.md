@@ -5,8 +5,8 @@
 
 ### Pre-processing
 ```sql
-Continous Attributes : GMM based on number of modes
-Discrete Attributes : 1-hot encoded
+Continous Attributes : GMM based on number of modes.
+Discrete Attributes : 1-hot encoded.
 ```
 #### Loss Function:
 ###### Evidence Based Lower Bound
