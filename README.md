@@ -1,5 +1,22 @@
-# vae-record-generation
+# VAE for Relational Record Generation
 *VAE for Relational Data Generation*
+
+
+
+### Pre-processing
+```sql
+Continous Attributes : GMM based on number of modes
+Discrete Attributes : 1-hot encoded
+```
+#### Loss Function:
+###### Evidence Based Lower Bound
+![ELBO](examples/img/elbo.JPG)
+
+<div style='page-break-after: always'></div>
+
+
+
+
 
 ### Project Structure:
 
@@ -46,4 +63,4 @@
         w.pt
         w2.pt
  ```
- 
+
