@@ -16,9 +16,7 @@ Discrete Attributes : 1-hot encoded
 
 
 
-
-
-### Project Structure:
+#### Project Structure:
 
 ```
 |   LICENSE
