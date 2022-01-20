@@ -69,6 +69,11 @@ cat\_0|cat\_1|cat\_2|num\_3|num\_4|cat\_5|cat\_6|target
 3|16|6,080|12.383|19.25|Economy|private|True
 
 
+### Pre-processing
+```sql
+Continous Attributes : GMM based on number of modes.
+Discrete Attributes : 1-hot encoded.
+```
 
 ## Running 
 ```python
