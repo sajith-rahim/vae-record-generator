@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.mixture import BayesianGaussianMixture
 
-from rdt.transformers import OneHotEncodingTransformer
+from utils.ohe import OneHotEncodingTransformer
 
 AttrMetaDetails = namedtuple("AttrMetaDetails", ["dim", "activation_fn"])
 
